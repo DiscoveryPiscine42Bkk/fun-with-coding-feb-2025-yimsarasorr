@@ -1,1 +1,1 @@
-ls | wc -l
+ls -1 | wc -l
