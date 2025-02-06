@@ -1,29 +1,91 @@
 /* portstyles.css */
-
-/* ให้ Navbar แสดงตลอดเวลา */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: Arial, sans-serif;
 }
 
+/* Navbar */
 nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Main Content */
+.main-content {
+  padding-top: 70px; /* ปรับให้เนื้อหาไม่ถูก Navbar บัง */
+}
+
+/* Section Base */
 .section {
-  padding: 100px 0;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.about img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+/* About Section */
+.about {
+  background-image: url("/rush/portflio/img/1.jpg");
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-image img {
+  width: 300px;
+  height: 500px;
   object-fit: cover;
+}
+
+.about-text {
+  flex: 2;
+  text-align: left;
+  padding: 20px;
+}
+
+.about-text h2 {
+  margin-top: 0;
+}
+
+.about-text p {
+  margin: 10px 0;
+}
+
+/* Showcase Section */
+.showcase {
+  background-image: url("/rush/portflio/img/1.jpg");
+  min-height: 50vh;
+  padding: 100px 0;
+}
+
+/* Contact Section */
+.contact {
+  background-image: url("/rush/portflio/img/1.jpg");
+  min-height: 25vh;
+  padding: 100px 0;
+}
+
+/* Skill Circles */
+.skills {
+  margin: 20px 0;
 }
 
 .skills .skill-circle {
@@ -38,7 +100,29 @@ nav {
   font-weight: bold;
 }
 
-/* ให้เนื้อหาหลังจาก navbar ไม่ถูกบัง */
-.main-content {
-  margin-top: 80px;
+/* Contact Buttons */
+.contact-buttons {
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .skills .skill-circle {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .section h2 {
+    padding-top: 10px;
+  }
 }
