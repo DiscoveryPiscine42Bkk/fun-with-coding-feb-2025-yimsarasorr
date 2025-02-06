@@ -1,23 +1,49 @@
-/* portstyles.css */
+/* Reset some default styles */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: Rubik, sans-serif;
 }
 
 /* Navbar */
 nav {
-  position: fixed;
   width: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
+  height: 60px; /* ความสูงของ Navbar */
 }
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* จัดให้ไอเทมอยู่ใน Nav ตรงกลางแนวตั้ง */
+  list-style: none; /* ลบจุดหน้าลิสต์ */
+  padding: 0; /* ลบ padding เริ่มต้น */
+  margin: 0; /* ลบ margin เริ่มต้น */
+  
+}
+
+.nav-item {
+  margin: 0 15px; /* เพิ่มระยะห่างระหว่างไอเทม */
+}
+
+.nav-link {
+  color: white; /* สีข้อความ */
+  text-decoration: none; /* ลบขีดเส้นใต้ */
+  font-size: 1rem; /* ขนาดฟอนต์ */
+  font-weight: bold; /* ตัวหนา */
+  transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์ hover */
+}
+
+.nav-link:hover {
+  color: #007bff; /* เปลี่ยนสีเมื่อ hover */
+}
+
 
 /* Main Content */
 .main-content {
-  padding-top: 70px; /* ปรับให้เนื้อหาไม่ถูก Navbar บัง */
+  padding-top: 20px; /* Adjust for fixed navbar */
 }
 
 /* Section Base */
@@ -25,14 +51,14 @@ nav {
   text-align: center;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
 }
 
 /* About Section */
 .about {
-  background-image: url("/rush/portflio/img/1.jpg");
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* gradient สี */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -44,15 +70,19 @@ nav {
   align-items: center;
   justify-content: center;
   width: 80%;
+  max-width: 1200px; /* จำกัดความกว้างสูงสุด */
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
+  margin: 20px; /* เพิ่มระยะห่าง */
 }
 
 .about-image img {
   width: 300px;
-  height: 500px;
+  height: 400px; /* ปรับขนาดให้เหมาะสม */
   object-fit: cover;
+  border-radius: 10px; /* เพิ่มขอบมน */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
 }
 
 .about-text {
@@ -63,52 +93,94 @@ nav {
 
 .about-text h2 {
   margin-top: 0;
+  font-size: 2.5rem; /* ปรับขนาดฟอนต์ */
 }
 
 .about-text p {
   margin: 10px 0;
+  font-size: 1.1rem; /* ปรับขนาดฟอนต์ */
 }
 
 /* Showcase Section */
 .showcase {
-  background-image: url("/rush/portflio/img/1.jpg");
+  background-color: #f8f9fa; /* สีพื้นหลังอ่อน */
   min-height: 50vh;
   padding: 100px 0;
 }
 
+.showcase h2 {
+  font-size: 2.5rem; /* ปรับขนาดฟอนต์ */
+}
+
 /* Contact Section */
 .contact {
-  background-image: url("/rush/portflio/img/1.jpg");
+  background: #343a40; /* สีน้ำตาลเข้ม */
   min-height: 25vh;
   padding: 100px 0;
 }
 
+.contact h2 {
+  font-size: 2.5rem; /* ปรับขนาดฟอนต์ */
+}
+
 /* Skill Circles */
 .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* ใช้ gap แทน margin */
   margin: 20px 0;
 }
 
-.skills .skill-circle {
+.skill-circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: red;
-  display: inline-block;
-  margin: 10px;
-  line-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* เพิ่มเอฟเฟกต์ hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+.skill-circle:hover {
+  transform: scale(1.1); /* ขยายเมื่อ hover */
+  background-color: darkred; /* เปลี่ยนสีเมื่อ hover */
 }
 
 /* Contact Buttons */
 .contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* ใช้ gap แทน margin */
   margin: 20px 0;
+}
+
+.contact-buttons .btn {
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase; /* ตัวอักษรเป็นตัวพิมพ์ใหญ่ */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* เพิ่มเอฟเฟกต์ hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+.contact-buttons .btn:hover {
+  transform: scale(1.1); /* ขยายเมื่อ hover */
+  background-color: #007bff; /* เปลี่ยนสีเป็นฟ้าเมื่อ hover */
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
+    text-align: center;
   }
 
   .about-image img {
@@ -116,13 +188,22 @@ nav {
     height: 200px;
   }
 
+  .about-text {
+    text-align: center;
+  }
+
   .skills .skill-circle {
     width: 80px;
     height: 80px;
-    line-height: 80px;
+    font-size: 0.9rem;
   }
 
   .section h2 {
-    padding-top: 10px;
+    font-size: 2rem; /* ปรับขนาดฟอนต์สำหรับมือถือ */
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }
