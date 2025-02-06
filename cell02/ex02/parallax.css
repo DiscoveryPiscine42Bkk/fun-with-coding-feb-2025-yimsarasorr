@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.parallax-text {
+    text-align: center;
+}
+
+.textcontent {
+    position: abssolute;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+#first {
+    background-image: url('https://img.freepik.com/free-photo/sleepy-domestic-cat-sofa_1303-21745.jpg?t=st=1738814441~exp=1738818041~hmac=195f7949fb9e73045811fe336c44be3b87ebded7bd3283ea389fd2bb9d14eae5&w=1380   ');
+}
+
+#second {
+    background-image: url('https://img.freepik.com/free-photo/close-up-pet-lifestyle_23-2149180526.jpg?t=st=1738814586~exp=1738818186~hmac=e1d62cb282b63f6ef93f2a8f6b568558ec7cff24f0ba54b2c3234e0af90ba4e7&w=1380');
+}
