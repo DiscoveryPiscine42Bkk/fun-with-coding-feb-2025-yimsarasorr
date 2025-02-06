@@ -18,7 +18,6 @@ body, html {
 }
 
 .textcontent {
-    position: abssolute;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -30,5 +29,5 @@ body, html {
 }
 
 #second {
-    background-image: url('https://img.freepik.com/free-photo/close-up-pet-lifestyle_23-2149180526.jpg?t=st=1738814586~exp=1738818186~hmac=e1d62cb282b63f6ef93f2a8f6b568558ec7cff24f0ba54b2c3234e0af90ba4e7&w=1380');
+    background-image: url('https://img.freepik.com/free-photo/close-up-pet-lifestyle_23-2149180526.jpg?t=st=1738815113~exp=1738818713~hmac=799d07cc6ed78b89c39870768515c355e81e52bd57247ab6080ede6f96861ca6&w=1380');
 }
