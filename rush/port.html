@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- ลิงก์ไปยังไฟล์ Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* ให้ Navbar แสดงตลอดเวลา */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      nav {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .section {
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .about img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .skills .skill-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+        display: inline-block;
+        margin: 10px;
+        line-height: 100px;
+        color: white;
+        font-weight: bold;
+      }
+
+      /* ให้เนื้อหาหลังจาก navbar ไม่ถูกบัง */
+      .main-content {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#showcase">Showcase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- About Section -->
+      <div class="section about" id="about">
+        <h2>About Me</h2>
+        <img src="https://via.placeholder.com/150" alt="My Photo" />
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Interests:</strong> Coding, Traveling, Photography</p>
+        <p>
+          <strong>Background:</strong> Passionate about web development and
+          software engineering.
+        </p>
+        <p>
+          <strong>Education:</strong> BSc in Computer Science from ABC
+          University
+        </p>
+      </div>
+
+      <!-- Showcase Section -->
+      <div class="section showcase" id="showcase">
+        <h2>My Skills & Achievements</h2>
+        <div class="skills">
+          <div class="skill-circle">HTML</div>
+          <div class="skill-circle">CSS</div>
+          <div class="skill-circle">JavaScript</div>
+          <div class="skill-circle">React</div>
+          <div class="skill-circle">Node.js</div>
+        </div>
+        <p>
+          <strong>Achievements:</strong> Built various projects like websites,
+          web apps, and contributed to open-source projects.
+        </p>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="section contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Connect with me on social media:</p>
+        <a
+          href="https://www.instagram.com/"
+          class="btn btn-danger"
+          target="_blank"
+          >Instagram</a
+        >
+        <a href="https://github.com/" class="btn btn-danger" target="_blank"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/"
+          class="btn btn-danger"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+
+    <!-- ลิงก์ไปยังไฟล์ Bootstrap JS และ Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
