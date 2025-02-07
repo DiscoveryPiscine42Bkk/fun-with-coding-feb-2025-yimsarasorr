@@ -1,4 +1,4 @@
-Project:root {
+:root {
   --text-color: #1a1c20;
   --link-color: #4a76ee;
   --background-color: #eeeff1;
@@ -15,16 +15,16 @@ html {
 }
 
 body {
-  font-family: Rubik;
-  color: #000000;
-  background-color: #FFF;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
   max-width: 1400px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
 a {
-  color: #4a76ee;
+  color: var(--link-color);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -40,7 +40,8 @@ nav {
   align-items: center;
   padding: 0 50px;
   height: 80px;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(238, 239, 241, 0.95);
+  backdrop-filter: blur(5px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -69,7 +70,7 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
   color: var(--link-color);
-  transform: translateY(-10px);
+  transform: translateY(-2px);
 }
 
 nav .right {
@@ -221,6 +222,7 @@ main {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  border-radius: 50%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -263,19 +265,19 @@ main {
   margin-bottom: 1rem;
 }
 
-/* ================= project SECTION ================= */
-.project-section {
+/* ================= TESTIMONY SECTION ================= */
+.testimony-section {
   padding: 100px 50px;
   background: white;
 }
 
-.project-section h2 {
+.testimony-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
-.project-section .group {
+.testimony-section .group {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -286,12 +288,12 @@ main {
   border-radius: 20px;
 }
 
-.project-section .person-details {
+.testimony-section .person-details {
   text-align: center;
   flex-shrink: 0;
 }
 
-.project-section .person-details img {
+.testimony-section .person-details img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -299,7 +301,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.project-section .text {
+.testimony-section .text {
   font-size: 1.1rem;
   line-height: 1.8;
 }
@@ -383,7 +385,7 @@ main {
     justify-content: center;
   }
 
-  .project-section .group {
+  .testimony-section .group {
     flex-direction: column;
     text-align: center;
   }

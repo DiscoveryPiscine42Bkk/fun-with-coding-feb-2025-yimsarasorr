@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Portfolio</title>
   </head>
@@ -16,11 +21,11 @@
     <!-- NAVBAR -->
     <nav>
       <div class="left">
-        <a href="../homepage/index.html">Homepage</a>
+        <a href="/">John Doe</a>
         <div class="nav-links">
           <a href="#about-me">About Me</a>
           <a href="#skills">Skills</a>
-          <a href="#project">Project</a>
+          <a href="#testimony">Testimony</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -34,7 +39,7 @@
           <i class="fa-brands fa-linkedin"></i>
           <span>Linkedin</span>
         </a>
-        <a href="mailto:xxx@gmail.com">
+        <a href="mailto:john@example.com">
           <i class="fa-solid fa-envelope"></i>
           <span>Email</span>
         </a>
@@ -51,7 +56,7 @@
       <div class="mobile-nav-links">
         <a href="#about-me">About Me</a>
         <a href="#skills">Skills</a>
-        <a href="#project">Project</a>
+        <a href="#testimony">Testimony</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="mobile-social-links">
@@ -89,9 +94,9 @@
               <i class="fa-solid fa-code"></i>
               <span>Skills</span>
             </a>
-            <a href="#project">
+            <a href="#testimony">
               <i class="fa-solid fa-pen"></i>
-              <span>Project</span>
+              <span>Testimony</span>
             </a>
             <a href="#contact">
               <i class="fa-solid fa-envelope"></i>
@@ -137,9 +142,9 @@
         </div>
       </section>
 
-      <!-- SECTION 3: project -->
-      <section id="project" class="project-section">
-        <h2>Project</h2>
+      <!-- SECTION 3: Testimony -->
+      <section id="testimony" class="testimony-section">
+        <h2>Testimony</h2>
         <div class="group">
           <div class="person-details">
             <img src="images/testimony-headshot.webp" alt="Client Headshot" />
@@ -169,23 +174,6 @@
             <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
             <p><i class="fa-solid fa-location-dot"></i> New York, USA</p>
           </div>
-
-          <form>
+          <form onsubmit="sendMail(event)">
             <label for="name">Name</label>
             <input type="text" id="name" required />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" rows="6" required></textarea>
-
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
-</html>
