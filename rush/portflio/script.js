@@ -1,11 +1,15 @@
-// Toggle Mobile Menu
-document.querySelector(".hamburger").addEventListener("click", function () {
-  document.querySelector(".mobile-menu").classList.toggle("active");
+// value in selection
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+// Toggle
+hamburger.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active");
 });
 
-// ปิดเมนูเมื่อคลิกลิงก์
-document.querySelectorAll(".mobile-menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-    document.querySelector(".mobile-menu").classList.remove("active");
-  });
-});
+// // ใช้ Event Delegation เพื่อจัดการการคลิกที่ลิงก์ในเมนูมือถือ
+// mobileMenu.addEventListener("click", function (event) {
+//   if (event.target.tagName === "A") {
+//     mobileMenu.classList.remove("active");
+//   }
+// });
