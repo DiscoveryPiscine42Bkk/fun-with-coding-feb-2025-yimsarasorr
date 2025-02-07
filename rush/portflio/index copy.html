@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="/">Home</a>
+        <div class="nav-links">
+          <a href="#about-me">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#project">project</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <a href="http://github.com" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+        <a href="http://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a href="mailto:john@example.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button class="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-nav-links">
+        <a href="#about-me">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="mobile-social-links">
+        <a href="https://github.com/inwchamp1337" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+        <a href="https://www.linkedin.com/in/pasin-ratchart-06a771149/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+        <a href="mailto:ppasinb@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: Hero -->
+      <section id="about-me" class="hero-section">
+        <div class="text">
+          <h2>Hi, I’m Champ</h2>
+          <p>
+            Pasin Racharak is a third-year student majoring in IoT Engineering, 
+            Information Science, and Industrial Physics. With a strong passion for programming, 
+            he is proficient in multiple programming languages and applies his skills to solve engineering 
+            and industrial challenges efficiently.
+          </p>
+
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+            <a href="#project">
+              <i class="fa-solid fa-pen"></i>
+              <span>Project</span>
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img src="images/myphoto.jpg" alt="John Doe Headshot" />
+        </div>
+      </section>
+
+      <!-- SECTION 2: Skills -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          Full-stack development requires proficiency in both front-end and back-end technologies, 
+          allowing developers to build and maintain entire web applications. Front-end skills include 
+          knowledge of HTML, CSS, JavaScript, and modern frameworks like Angular, React, or Vue.js, 
+          enabling the creation of interactive and user-friendly interfaces. On the back-end, 
+          expertise in server-side languages like Node.js, along with experience in databases 
+          such as PostgreSQL or MongoDB, is essential for handling data and server logic. 
+          Understanding API design and integration, particularly RESTful services, 
+          ensures seamless communication between the client and server. 
+          Full-stack developers should also be familiar with containerization tools like Docker 
+          for efficient deployment and scaling. A solid grasp of version control systems like 
+          Git is critical for collaboration and project management in a team environment.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="HTML Logo" />
+            <span>HTML</span>
+          </div>
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="CSS Logo" />
+            <span>CSS</span>
+          </div>
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="JavaScript Logo" />
+            <span>JavaScript</span>
+          </div>
+          <div class="cell">
+            <img src="images/node-logo.webp" alt="Node.js Logo" />
+            <span>Node.js</span>
+          </div>
+          <div class="cell">
+            <img src="images/react-logo.webp" alt="React.js Logo" />
+            <span>React.js</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: project -->
+      <section id="project" class="project-section">
+        <h2>project</h2>
+        <div class="group">
+          <div class="person-details">
+            <img src="images/Huehiw Marketplace.jpg" alt="Client Headshot" />
+            <p>Huehiw Marketplace</p>
+            <p>React, TS, CSS, HTML, JS</p>
+          </div>
+          <div class="text">
+            Huehiw Marketplace is an online marketplace application developed using CSS,
+            JavaScript, ReactJS, and TypeScript. The application offers key features that enable
+            users to conveniently list items for sale, search for products, and manage their
+            profiles. Its standout functionalities include an intuitive post creation interface, an
+            explore page for browsing posts, profile editing, and the ability to like or save posts.
+            Users can also edit and delete their own content as needed. The platform
+            incorporates monetization features such as banner advertisements, post boosting
+            services to increase visibility, and a membership system designed to enhance
+            promotional opportunities. This application is designed to be user-friendly while
+            empowering users to maximize their market potential
+          </div>
+        </div>
+        <div class="group">
+          <div class="person-details">
+            <img src="images/Project AI.jpg" alt="Client Headshot" />
+            <p>Linebot Spam Detector</p>
+            <p>HTML, CSS, Python, Flask, JS</p>
+          </div>
+          <div class="text">
+            The Thai Language Spam Detector with a Line Bot and Website is a comprehensive project
+            that combines artificial intelligence, web development, and chatbot technology to tackle spam
+            message detection in the Thai language. The project utilizes a custom-trained AI model based
+            on LSTM (Long Short-Term Memory) to classify text as spam or non-spam effectively. The
+            training dataset was meticulously crafted by collecting spam messages, curating non-spam
+            examples, and generating additional data using Python-based scripts.
+          </div>
+        </div>
+        <div class="group">
+          <div class="person-details">
+            <img src="images/project3.png" alt="Client Headshot" />
+            <p>Chatbot on Raspi zero w</p>
+            <p>Python, Raspi</p>
+          </div>
+          <div class="text">
+            Developed a Chatbot using the OpenAI API that supports Thai and english voice interactions, 
+            (implemented before ChatGPT introduced voice support)
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- SECTION 4: Contact -->
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="group">
+          <div class="text">
+            
+            <br />
+            <p><i class="fa-solid fa-envelope"></i> ppasinb@gmail.com</p>
+            <p><i class="fa-solid fa-link"></i> Linkedin : Pasin Ratcharak</p>
+            <p><i class="fa-solid fa-phone"></i> +66 00 000 0000</p>
+            <p><i class="fa-solid fa-location-dot"></i> Bangkok, Thailand</p>
+          </div>
+
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
