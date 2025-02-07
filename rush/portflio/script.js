@@ -21,28 +21,9 @@ window.addEventListener("scroll", function () {
   let currentScroll = window.scrollY;
 
   if (currentScroll < lastScrollTop || currentScroll > lastScrollTop) {
-    mobileMenu.classList.remove("active");
-    hamburger.classList.remove("open");
+    mobileMenu.classList.remove("active"); // ปิดเมนู
+    hamburger.classList.remove("open"); // ปิดสถานะ hamburger
   }
 
   lastScrollTop = currentScroll;
 });
-
-function sendMail(event) {
-  event.preventDefault(); // handle with sent
-
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-
-  let mailto =
-    "mailto:your-email@example.com" +
-    "?subject=" +
-    encodeURIComponent("Contact from " + name) +
-    "&body=" +
-    encodeURIComponent(
-      "Name: " + name + "\nEmail: " + email + "\nMessage: " + message
-    );
-
-  window.location.href = mailto; // เปิดแอปเมลพร้อมข้อมูล
-}
